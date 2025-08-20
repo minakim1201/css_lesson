@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background 연습</title>
+</head>
+<style>
+body{
+        /*background-color: olive;*/
+        background-image: url(images/bg2.jpeg); /*원래 사이즈는 작지만 반복됨 tile image*/
+        /*background-repeat: no-repeat; (반복 안되게 한번만 출력)*/}
+.box{
+    width:300px;
+    height: 300px;
+    background:url("images/bg4.jpg") no-repeat left top;
+    }
+#bg1{background-size: auto;}
+#bg2{background-size: 200px;}
+#bg3{background-size: 50%;}
+#bg4{background-size: 100% 100%;}
+#bg5{background-size: contain;}
+#bg6{background-size: cover; background-position: -50px;} /*cover와 함께 중앙을 크롭하고 싶은때는 position을 사용함*/
+</style>
+<body>
+    <div class="box" id="bg1"></div>
+    <div class="box" id="bg2"></div>
+    <div class="box" id="bg3"></div>
+    <div class="box" id="bg4"></div>
+    <div class="box" id="bg5"></div>
+    <div class="box" id="bg6"></div>
+</body>
+</html>

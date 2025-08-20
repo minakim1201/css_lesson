@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS연습</title>
+  <style>
+    /*h1{
+      font-size: 100px;
+      color: hsl(198,86.8%,47.5%);
+    }
+    /*div{
+      border: 1px solid black;
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+      text-align: justify;
+    } */
+    .heading{
+        background: #200;
+        width:500px;
+        height:100px;
+        color:rgb(255, 255, 255);
+        margin:auto; /*박스 자체를 가운데 정렬*/
+        text-align: center; /*박스안의 글자를 박스를 기준으로 가운데 정렬*/
+        line-height:100px; /*line-height와 height의 값과 같은 값을 설정하면 수직 가운데 정렬됨*/
+        font-size:50px;
+        font-weight:900;
+    }
+    .shadow1{
+        color:red;
+        text-shadow:1px 1px black; /*가로, 세로 거리, 색상 지정*/
+    }
+    .shadow2{
+        text-shadow:5px 5px 3px #ffa500; /*가로, 세로 거리, 번짐 정도, 색상 지정*/
+    }
+    .shadow3{
+        color:#fff;
+        text-shadow:7px -7px 20px #000; /*가로, 세로거리, 번짐 정도, 색상 지정*/
+    }
+    .spacing1{letter-spacing:0.2em;}
+    .spacing2{letter-spacing:0.5em;}
+  </style>
+</head>
+<body>
+    <div class="heading">HTML
+    </div>
+    <h1>CSS</h1>
+    <div>
+    In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+    </div>
+    <!--텍스트의 밑줄 표시하기-->
+    <p style="text-decoration: none;">none</p>
+    <p style="text-decoration: underline;">underline</p>
+    <p style="text-decoration: overline;">overline</p>
+    <p style="text-decoration: line-through;">line through</p>
+
+    <h1 class="shadow1">HTML</h1>
+    <h1 class="shadow2">CSS</h1>
+    <h1 class="shadow3">자바스크립트</h1>
+    
+    <p>CSS</p>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+</body>
+</html>
